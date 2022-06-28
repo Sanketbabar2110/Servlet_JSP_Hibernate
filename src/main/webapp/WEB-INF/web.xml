@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<!-- Servlet for controller -->
+	<servlet>
+		<servlet-name>CreateStudent</servlet-name>
+		<servlet-class>com.pro.controller.CreateStudentController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetByRoll</servlet-name>
+		<servlet-class>com.pro.controller.GetStudentByRollController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetAllStudent</servlet-name>
+		<servlet-class>com.pro.controller.GetAllStudentController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteStudent</servlet-name>
+		<servlet-class>com.pro.controller.DeleteStudentByRollController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>updateStudent</servlet-name>
+		<servlet-class>com.pro.controller.UpdateStudentController</servlet-class>
+	</servlet>
+
+	<!-- Servlet mapping with JSP -->
+	<servlet-mapping>
+		<servlet-name>CreateStudent</servlet-name>
+		<url-pattern>/addStudent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetAllStudent</servlet-name>
+		<url-pattern>/getAll</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetByRoll</servlet-name>
+		<url-pattern>/GetByRoll</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteStudent</servlet-name>
+		<url-pattern>/deleteByRoll</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>updateStudent</servlet-name>
+		<url-pattern>/updateStudent</url-pattern>
+	</servlet-mapping>
+</web-app>
